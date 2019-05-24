@@ -24,6 +24,10 @@ export default {
             type: String,
             default: 'black'
         },
+        eyesColor: {
+            type: String,
+            default: 'black'
+        },
         foregroundAlpha: {
             type: Number,
             default: 1.0
@@ -59,6 +63,9 @@ export default {
         foreground () {
             this.qrious.foreground = this.foreground;
         },
+        eyesColor () {
+            this.qrious.eyesColor = this.eyesColor;
+        },
         foregroundAlpha () {
             this.qrious.foregroundAlpha = this.foregroundAlpha;
         },
@@ -83,6 +90,7 @@ export default {
         const background = this.background;
         const backgroundAlpha = this.backgroundAlpha;
         const foreground = this.foreground;
+        const eyesColor = this.eyesColor;
         const foregroundAlpha = this.foregroundAlpha;
         const level = this.level;
         const mime = this.mime;
@@ -95,6 +103,7 @@ export default {
             background,
             backgroundAlpha,
             foreground,
+            eyesColor,
             foregroundAlpha,
             level,
             mime,
